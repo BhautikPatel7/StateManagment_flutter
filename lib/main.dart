@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart'; 
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
+import 'package:widget_pratice/fifth.dart';
 import 'package:widget_pratice/four.dart';
 import 'package:widget_pratice/second.dart';
 import 'package:widget_pratice/third.dart'; 
@@ -17,7 +18,7 @@ Widget build(BuildContext context) {
 		primarySwatch: Colors.green, // Set the app's primary theme color 
 	), 
 	debugShowCheckedModeBanner: false, // Remove debug banner 
-	home: const Tutorials4(), 
+	home: const Tutorials5(), 
 	); 
 } 
 } 
