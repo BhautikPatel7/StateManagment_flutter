@@ -18,7 +18,7 @@ Widget build(BuildContext context) {
 		primarySwatch: Colors.green, // Set the app's primary theme color 
 	), 
 	debugShowCheckedModeBanner: false, // Remove debug banner 
-	home: const Tutorials5(), 
+	home:  StateManager(), 
 	); 
 } 
 } 
