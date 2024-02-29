@@ -3,6 +3,8 @@ import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 import 'package:widget_pratice/fifth.dart';
 import 'package:widget_pratice/four.dart';
 import 'package:widget_pratice/second.dart';
+import 'package:widget_pratice/seven.dart';
+import 'package:widget_pratice/six.dart';
 import 'package:widget_pratice/third.dart'; 
 
 void main() { 
@@ -18,8 +20,15 @@ Widget build(BuildContext context) {
 		primarySwatch: Colors.green, // Set the app's primary theme color 
 	), 
 	debugShowCheckedModeBanner: false, // Remove debug banner 
-	home:  myAppone(), 
-	); 
+	home:   ShoppingList(
+      products: [
+        Product(name: 'Eggs'),
+        Product(name: 'Flour'),
+        Product(name: 'Chocolate'),
+      ],
+    )); 
+  // home: MyApphy(),
+	// ); 
 } 
 } 
 
