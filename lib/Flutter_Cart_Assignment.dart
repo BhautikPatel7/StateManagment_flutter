@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 // Class That Define Name Of Products In List
 class Product {
   const Product({required this.name});
@@ -9,8 +9,6 @@ class Product {
 // Call Back function from ListView Widget
 typedef CartChangedCallback = Function(Product product, bool inCart);
 typedef RemoveCallback = Function();
-
-
 // For An Single Iteam 
 class ShoppingListItem extends StatefulWidget {
 
@@ -154,7 +152,6 @@ class _ShoppingListState extends State<ShoppingList> {
       widget.products.add(Product(name: name));
     });
   }
-
   // Function That Remove From List
     void removeItemToList(Product p) {
     setState(() {
@@ -199,6 +196,21 @@ class _ShoppingListState extends State<ShoppingList> {
     );
     
   }
+
+  // Method For Validation 
+String? get _errorText{
+  final text = myController.value.text;
+  if (text.isEmpty) {
+    return 'Can\'t be empty '; 
+  }
+
+  if (text.length < 2) {
+    return 'add Atleast 2 character';
+  }
+  return null;
+}
+
+var _text ='';
   // Dilog Design Thats Open On Cliccking Add cart Icon  
   void _showcontent() {
     showDialog(
@@ -211,9 +223,10 @@ class _ShoppingListState extends State<ShoppingList> {
               children: [
                 TextField(
                    controller: myController,
-                  decoration: const InputDecoration(
+                  decoration:  InputDecoration(
                     border: UnderlineInputBorder(),
                     labelText: 'Enter Iteam',
+                    // errorText: _errorText,
                   ),
                 ),
               ],
