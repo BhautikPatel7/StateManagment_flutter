@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class CustomWidget extends StatelessWidget {
+  const CustomWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,6 +21,8 @@ class CustomWidget extends StatelessWidget {
 }
 
 class Customwidgetone extends StatelessWidget {
+  const Customwidgetone({super.key});
+
   @override
   Widget build(BuildContext context) {
     return  Expanded(
@@ -44,6 +48,8 @@ class Customwidgetone extends StatelessWidget {
   
 }
 class CustomwidgetTwo extends StatelessWidget {
+  const CustomwidgetTwo({super.key});
+
   @override
   Widget build(BuildContext context) {
 return    Expanded(
@@ -53,7 +59,7 @@ return    Expanded(
               child: ListView.builder(
                 itemCount:50,
                 itemBuilder: (context, index) {
-                  return ListTile(
+                  return const ListTile(
                     leading: CircleAvatar(
                       backgroundColor: Color.fromARGB(255, 186, 177, 200),
                       child: Text("Circle"),
@@ -71,6 +77,8 @@ return    Expanded(
   
 }
 class CustomwidgetThree extends StatelessWidget {
+  const CustomwidgetThree({super.key});
+
   @override
   Widget build(BuildContext context) {
     return  Expanded(
