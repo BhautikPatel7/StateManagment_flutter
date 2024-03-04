@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart'; 
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 import 'package:widget_pratice/Textfield.dart';
+import 'package:widget_pratice/grid.dart';
 import 'package:widget_pratice/managestate.dart';
 import 'package:widget_pratice/simplecalac.dart';
 import 'package:widget_pratice/fifth.dart';
@@ -27,10 +28,10 @@ Widget build(BuildContext context) {
 	), 
 	debugShowCheckedModeBanner: false, // Remove debug banner 
 	// home: SimpleCalc()
-  home: SignUpScreen(),
+  // home: SignUpScreen(),
   // home: TextfieldsGetting (),
   // home: CounterStatefulclass(),
-  
+  home: GridExample(),
   
   ); 
   // home: MyApphy(),
