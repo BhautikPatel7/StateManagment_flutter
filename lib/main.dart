@@ -10,6 +10,7 @@ import 'package:widget_pratice/login.dart';
 import 'package:widget_pratice/second.dart';
 import 'package:widget_pratice/seven.dart';
 import 'package:widget_pratice/Flutter_Cart_Assignment.dart';
+import 'package:widget_pratice/styleandtheme.dart';
 import 'package:widget_pratice/third.dart';
 import 'package:widget_pratice/ui_login.dart';
 import 'package:widget_pratice/validation.dart'; 
@@ -24,14 +25,20 @@ Widget build(BuildContext context) {
 	return MaterialApp( 
 	// Define the app's theme 
 	theme: ThemeData( 
-		primarySwatch: Colors.green, // Set the app's primary theme color 
+		primarySwatch:  Colors.amber, // Set the app's primary theme color
+
+    textTheme: TextTheme(
+      headline1: TextStyle(fontSize: 21,fontWeight: FontWeight.bold),
+      subtitle1: TextStyle(fontSize: 29,fontWeight: FontWeight.normal,fontStyle: FontStyle.italic),
+    ) 
 	), 
 	debugShowCheckedModeBanner: false, // Remove debug banner 
 	// home: SimpleCalc()
   // home: SignUpScreen(),
   // home: TextfieldsGetting (),
   // home: CounterStatefulclass(),
-  home: GridExample(),
+  // home: GridExample(),
+  home: StyleandTheme(),
   
   ); 
   // home: MyApphy(),
