@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 import 'package:widget_pratice/CreatingCustomWidget.dart';
 import 'package:widget_pratice/CustomWidget.dart';
+import 'package:widget_pratice/Parallxeffect.dart';
+import 'package:widget_pratice/SplashScreen.dart';
 import 'package:widget_pratice/Textfield.dart';
 import 'package:widget_pratice/grid.dart';
 import 'package:widget_pratice/managestate.dart';
@@ -15,7 +17,8 @@ import 'package:widget_pratice/Flutter_Cart_Assignment.dart';
 import 'package:widget_pratice/styleandtheme.dart';
 import 'package:widget_pratice/third.dart';
 import 'package:widget_pratice/ui_login.dart';
-import 'package:widget_pratice/validation.dart'; 
+import 'package:widget_pratice/validation.dart';
+import 'package:widget_pratice/workwithtab.dart'; 
 
 void main() { 
 runApp(MyApp()); 
@@ -42,7 +45,10 @@ Widget build(BuildContext context) {
   // home: GridExample(),
   //home: StyleandTheme(),
   // home: CustomWidget(),
-  home: CustomWidgetUn(),
+  // home: WorkWithTabs(),
+  // home: CustomWidgetUn(),
+  //home: ExampleParallax(),
+  home: SpashScrren(),
   
   ); 
   // home: MyApphy(),
