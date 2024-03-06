@@ -95,25 +95,27 @@ class PersonDetail extends StatelessWidget {
   const PersonDetail({super.key, required this.personofstateless});
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Image.network(personofstateless!.picture),
-          Text(personofstateless!.greeting),
-          Text(" My Name Is${personofstateless!.name}"),
-          Text(" My Self Is${personofstateless!.about}"),
-          Text(" My age Is${personofstateless!.age}"),
-          Text(" My Email Is${personofstateless!.email}"),
-          Text(" My Eyecolor Is${personofstateless!.eyeColor}"),
-          Text(" My Compny Is${personofstateless!.company}"),
-          Text(" My Balance Is${personofstateless!.balance}"),
-          Text(" My FavoriteFruit Is${personofstateless!.favoriteFruit}"),
-          Text(" My Address Is${personofstateless!.address}"),
-          Text(" My Phone Is${personofstateless!.phone}"),
-
-        ],
+    return SingleChildScrollView(
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Image.network(personofstateless!.picture),
+            Text(personofstateless!.greeting),
+            Text(" My Name Is${personofstateless!.name}"),
+            Text(" My Self Is${personofstateless!.about}"),
+            Text(" My age Is${personofstateless!.age}"),
+            Text(" My Email Is${personofstateless!.email}"),
+            Text(" My Eyecolor Is${personofstateless!.eyeColor}"),
+            Text(" My Compny Is${personofstateless!.company}"),
+            Text(" My Balance Is${personofstateless!.balance}"),
+            Text(" My FavoriteFruit Is${personofstateless!.favoriteFruit}"),
+            Text(" My Address Is${personofstateless!.address}"),
+            Text(" My Phone Is${personofstateless!.phone}"),
+      
+          ],
+        ),
       ),
     );
   }

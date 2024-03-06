@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart'; 
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 import 'package:widget_pratice/Adaptivedesign.dart';
+import 'package:widget_pratice/AnimateContainers.dart';
+import 'package:widget_pratice/AnimationWscubeCon.dart';
 import 'package:widget_pratice/BMIcal.dart';
 import 'package:widget_pratice/CreatingCustomWidget.dart';
 import 'package:widget_pratice/CustomWidget.dart';
@@ -27,7 +29,22 @@ void main() {
 runApp(MyApp()); 
 } 
 
-class MyApp extends StatelessWidget { 
+class MyApp extends StatefulWidget { 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
+   late Animation<double> animation; 
+   late AnimationController controller; 
+      @override 
+   void initState() {
+      super.initState(); 
+      controller = AnimationController(
+         duration: const Duration(seconds: 5), vsync: this); 
+      animation = Tween<double>(begin: 0.0, end: 1.0).animate(controller); 
+      controller.forward(); 
+   } 
 @override 
 Widget build(BuildContext context) { 
 	return MaterialApp( 
@@ -53,12 +70,20 @@ Widget build(BuildContext context) {
   //home: ExampleParallax(),
   // home: SpashScrren(),
   // home: BmiCalculator(),
-  home:AdaptiveDesign(),
+  // home:AdaptiveDesign(),
+    // home: MyHomePage(title: 'Product layout demo home page', animation: animation,)
+   home: AnimationWscubeCon(),
   
   ); 
   // home: MyApphy(),
 	// ); 
+  
 } 
+ @override 
+   void dispose() {
+      controller.dispose();
+      super.dispose(); 
+   } 
 } 
 
 class CircularSliderWidget extends StatelessWidget {
