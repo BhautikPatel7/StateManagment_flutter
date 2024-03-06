@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart'; 
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
+import 'package:widget_pratice/Adaptivedesign.dart';
 import 'package:widget_pratice/BMIcal.dart';
 import 'package:widget_pratice/CreatingCustomWidget.dart';
 import 'package:widget_pratice/CustomWidget.dart';
@@ -15,6 +16,7 @@ import 'package:widget_pratice/login.dart';
 import 'package:widget_pratice/second.dart';
 import 'package:widget_pratice/seven.dart';
 import 'package:widget_pratice/Flutter_Cart_Assignment.dart';
+import 'package:widget_pratice/src/People.dart';
 import 'package:widget_pratice/styleandtheme.dart';
 import 'package:widget_pratice/third.dart';
 import 'package:widget_pratice/ui_login.dart';
@@ -50,7 +52,8 @@ Widget build(BuildContext context) {
   // home: CustomWidgetUn(),
   //home: ExampleParallax(),
   // home: SpashScrren(),
-  home: BmiCalculator(),
+  // home: BmiCalculator(),
+  home:AdaptiveDesign(),
   
   ); 
   // home: MyApphy(),
