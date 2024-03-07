@@ -1,26 +1,30 @@
 import 'package:flutter/material.dart'; 
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 import 'package:widget_pratice/Adaptivedesign.dart';
-import 'package:widget_pratice/AnimateContainers.dart';
-import 'package:widget_pratice/AnimationWscubeCon.dart';
+import 'package:widget_pratice/Animations/AnimateContainers.dart';
+import 'package:widget_pratice/Animations/AnimatedOpacity.dart';
+import 'package:widget_pratice/Animations/AnimationWscubeCon.dart';
 import 'package:widget_pratice/BMIcal.dart';
 import 'package:widget_pratice/CreatingCustomWidget.dart';
 import 'package:widget_pratice/CustomWidget.dart';
+import 'package:widget_pratice/Animations/HeroAnimation.dart';
+import 'package:widget_pratice/MapingList.dart';
 import 'package:widget_pratice/Parallxeffect.dart';
-import 'package:widget_pratice/SplashScreen.dart';
+import 'package:widget_pratice/Animations/SplashScreen.dart';
 import 'package:widget_pratice/Textfield.dart';
+import 'package:widget_pratice/ThreeDList.dart';
 import 'package:widget_pratice/grid.dart';
 import 'package:widget_pratice/managestate.dart';
 import 'package:widget_pratice/simplecalac.dart';
-import 'package:widget_pratice/fifth.dart';
-import 'package:widget_pratice/four.dart';
+import 'package:widget_pratice/numericname/fifth.dart';
+import 'package:widget_pratice/numericname/four.dart';
 import 'package:widget_pratice/login.dart';
-import 'package:widget_pratice/second.dart';
-import 'package:widget_pratice/seven.dart';
-import 'package:widget_pratice/Flutter_Cart_Assignment.dart';
+import 'package:widget_pratice/numericname/second.dart';
+import 'package:widget_pratice/numericname/seven.dart';
+import 'package:widget_pratice/Assignment/Flutter_Cart_Assignment.dart';
 import 'package:widget_pratice/src/People.dart';
 import 'package:widget_pratice/styleandtheme.dart';
-import 'package:widget_pratice/third.dart';
+import 'package:widget_pratice/numericname/third.dart';
 import 'package:widget_pratice/ui_login.dart';
 import 'package:widget_pratice/validation.dart';
 import 'package:widget_pratice/workwithtab.dart'; 
@@ -72,7 +76,11 @@ Widget build(BuildContext context) {
   // home: BmiCalculator(),
   // home:AdaptiveDesign(),
     // home: MyHomePage(title: 'Product layout demo home page', animation: animation,)
-   home: AnimationWscubeCon(),
+  // home: AnimationWscubeCon(),
+  // home: AnimatedOpacityone(),
+  // home: HeroAnimationExample(),
+  // home: ThreeDList(),
+  home: MapingIntoList(),
   
   ); 
   // home: MyApphy(),

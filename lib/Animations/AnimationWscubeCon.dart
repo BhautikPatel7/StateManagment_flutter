@@ -38,11 +38,8 @@ bool flag = true;
                       _width = 100;
                       _height = 100;
                       flag = true;
-                    }
-                    
+                    }  
                   }
-                
-              
                 );
               }, child: Text('Start')),
             ],
